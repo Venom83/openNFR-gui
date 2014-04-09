@@ -108,8 +108,8 @@
 		<key id="KEY_RIGHT" mapto="RightPressed" flags="mr" />-->
 		<!--<key id="KEY_LEFT" mapto="volumeDown" flags="mr" />
 		<key id="KEY_RIGHT" mapto="volumeUp" flags="mr" />-->
-		<key id="KEY_UP" mapto="zapUp" flags="m" />
-		<key id="KEY_DOWN" mapto="zapDown" flags="m" />
+		<key id="KEY_UP" mapto="ChannelPlusPressed" flags="m" />
+		<key id="KEY_DOWN" mapto="ChannelMinusPressed" flags="m" />
 		<key id="KEY_PREVIOUS" mapto="historyBack" flags="mr" />
 		<key id="KEY_NEXT" mapto="historyNext" flags="mr" />
 		<key id="KEY_BACK" mapto="historyBack" flags="mr" />
