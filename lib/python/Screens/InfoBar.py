@@ -211,8 +211,8 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 		self.session.open(TimerEditList)
 
 	def openSleepTimer(self):
-		from Screens.PowerTimerEdit import PowerTimerEditList
-		self.session.open(PowerTimerEditList)
+		from Screens.SleepTimerEdit import SleepTimerEdit
+		self.session.open(SleepTimerEdit)
 		
 	def showMediaPlayer(self):
 		try:
