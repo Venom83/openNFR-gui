@@ -69,10 +69,10 @@ class SkinSelectorBase:
 			skinfile = os.path.join(skinfile, self.SKINXML)
 		elif self["SkinList"].getCurrent() == self.PICONDEFAULTSKIN:
 			skinfile = ""
-			skinfile = os.path.join(skinfile, self.NFRSKINXML)
+			skinfile = os.path.join(skinfile, self.PICONSKINXML)
 		elif self["SkinList"].getCurrent() == self.NFRDEFAULTSKIN:
 			skinfile = ""
-			skinfile = os.path.join(skinfile, self.PICONSKINXML)			
+			skinfile = os.path.join(skinfile, self.NFRSKINXML)			
 		else:
 			skinfile = self["SkinList"].getCurrent()
 			skinfile = os.path.join(skinfile, self.SKINXML)
