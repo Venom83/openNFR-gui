@@ -19,6 +19,8 @@ class SkinSelectorBase:
 			self.skinlist.append(self.DEFAULTSKIN)
 		if self.PICONSKINXML and os.path.exists(os.path.join(self.root, self.PICONSKINXML)):
 			self.skinlist.append(self.PICONDEFAULTSKIN)
+		if self.NFRSKINXML and os.path.exists(os.path.join(self.root, self.NFRSKINXML)):
+			self.skinlist.append(self.NFRDEFAULTSKIN)			
 		for root, dirs, files in os.walk(self.root, followlinks=True):
 			for subdir in dirs:
 				dir = os.path.join(root,subdir)
@@ -67,7 +69,10 @@ class SkinSelectorBase:
 			skinfile = os.path.join(skinfile, self.SKINXML)
 		elif self["SkinList"].getCurrent() == self.PICONDEFAULTSKIN:
 			skinfile = ""
-			skinfile = os.path.join(skinfile, self.PICONSKINXML)
+			skinfile = os.path.join(skinfile, self.NFRSKINXML)
+		elif self["SkinList"].getCurrent() == self.NFRDEFAULTSKIN:
+			skinfile = ""
+			skinfile = os.path.join(skinfile, self.PICONSKINXML)			
 		else:
 			skinfile = self["SkinList"].getCurrent()
 			skinfile = os.path.join(skinfile, self.SKINXML)
@@ -106,6 +111,9 @@ class SkinSelectorBase:
 		elif self["SkinList"].getCurrent() == self.PICONDEFAULTSKIN:
 			pngpath = "."
 			pngpath = os.path.join(os.path.join(self.root, pngpath), "piconprev.png")
+		elif self["SkinList"].getCurrent() == self.NFRDEFAULTSKIN:
+			pngpath = "."
+			pngpath = os.path.join(os.path.join(self.root, pngpath), "piconprev.png")			
 		else:
 			pngpath = self["SkinList"].getCurrent()
 			pngpath = os.path.join(os.path.join(self.root, pngpath), "prev.png")
@@ -143,6 +151,8 @@ class LcdSkinSelector(Screen, SkinSelectorBase):
 	DEFAULTSKIN = "< Default >"
 	PICONSKINXML = "skin_display_picon.xml"
 	PICONDEFAULTSKIN = "< Default with Picon >"
+	NFRSKINXML = "skin_display_nfr.xml"
+	NFRDEFAULTSKIN = "< NFR TEAM >"	
 
 	skinlist = []
 	root = os.path.join(eEnv.resolve("${datadir}"),"enigma2/display/")
