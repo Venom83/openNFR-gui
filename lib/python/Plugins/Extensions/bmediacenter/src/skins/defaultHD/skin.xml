@@ -65,8 +65,8 @@
       <convert type="MenuEntryCompare">menu_weblinks</convert>
       <convert type="ConditionalShowHide" />
     </widget>    
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
   </screen>
   <!--DMC Settings Menu-->
   <screen name="MC_Settings" position="0,0" size="1280,720" title="Settings" flags="wfNoBorder" backgroundColor="black">
@@ -81,8 +81,8 @@
     </widget>
     <ePixmap name="mb_bgsettings" position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
     <widget name="configlist" position="339,202" zPosition="3" size="600,338" scrollbarMode="showOnDemand" transparent="1" />
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
   </screen>
   <!--DMC Favorite Folders-->
   <screen name="MC_FavoriteFolders" position="0,0" size="1280,720" title="Favorite Folders" flags="wfNoBorder" backgroundColor="black">
@@ -105,8 +105,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
 	    <ePixmap position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
 
   </screen>
@@ -142,8 +142,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="669,180" zPosition="2" size="533,357" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsr.png" transparent="1" alphatest="blend" />
     <ePixmap position="75,180" zPosition="2" size="533,357" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsl.png" transparent="1" alphatest="blend" />
   </screen>
@@ -180,8 +180,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
   </screen>
   <screen name="AudioPlayerSettings" position="0,0" size="1280,720" flags="wfNoBorder" title="Audioplayer Settings" backgroundColor="black">
     <ePixmap name="mb_bg" position="0,0" zPosition="0" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fs8.png" />
@@ -194,8 +194,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="Lyrics" position="0,0" size="1280,720" flags="wfNoBorder" title="Lyrics" backgroundColor="black">
@@ -213,8 +213,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="MC_WebRadio" position="0,0" size="1280,720" title="Audio Player" flags="wfNoBorder" backgroundColor="black">
@@ -238,8 +238,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="669,180" zPosition="2" size="533,357" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsr.png" transparent="1" alphatest="blend" />
     <ePixmap position="75,180" zPosition="2" size="533,357" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsl.png" transparent="1" alphatest="blend" />
   </screen>
@@ -258,15 +258,15 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,385" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
   </screen>
   <!--DMC Video Player-->
   <screen name="MC_VideoPlayer" position="0,0" size="1280,720" title="Video Player" flags="wfNoBorder" backgroundColor="black">
     <ePixmap name="mb_bg" position="center,center" zPosition="0" size="1280,718" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fs8.png" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/icons/settingsblue.png" position="1140,644" zPosition="2" size="40,40" transparent="1" alphatest="blend" />
-    <widget name="filelist" transparent="1" enableWrapAround="1" position="339,200" zPosition="5" size="602,328" scrollbarMode="showOnDemand" />
+    <widget name="filelist" transparent="1" enableWrapAround="1" position="339,200" zPosition="5" size="602,315" scrollbarMode="showOnDemand" />
     <widget name="new widget" position="0, 0" size="10, 10" />
     <widget source="global.CurrentTime" render="Label" position="66,77" zPosition="1" size="305,30" font="Regular;23" transparent="1" halign="left" valign="center" foregroundColor="greydate">
       <convert type="ClockToText">Date</convert>
@@ -274,12 +274,12 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
     <eLabel text="HDD" position="75,341" size="60,22" font="Regular; 18" transparent="1" halign="left" zPosition="5" foregroundColor="grey" />
     <eLabel text="free" position="147,341" size="60,22" font="Regular; 18" transparent="1" halign="right" zPosition="6" foregroundColor="grey" />
-    <widget render="mvmHDDfree" source="global.CurrentTime" position="73,366" size="135,50" font="Regular;18" foregroundColor="yellow" zPosition="6" halign="center" transparent="1" />
+    <widget render="mvmHDDfree" source="global.CurrentTime" position="58,366" size="160,50" font="Regular;18" foregroundColor="yellow" zPosition="6" halign="center" transparent="1" />
     <ePixmap position="1067,341" zPosition="4" size="134,71" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/mop_logo.png" transparent="1" alphatest="blend" />
     <ePixmap position="center,630" zPosition="4" size="394,65" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/butt_mp.png" transparent="1" alphatest="blend" />
   </screen>
@@ -321,8 +321,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,385" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="MC_PicSetup" position="0,0" size="1280,720" title="Settings" flags="wfNoBorder" backgroundColor="black">
@@ -336,8 +336,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,385" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="Selectmusic" position="0,0" size="1280,720" title="Settings" flags="wfNoBorder" backgroundColor="black">
@@ -351,8 +351,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,385" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
   </screen>
   <!--DMC VLC Player-Serverlist-->
@@ -369,8 +369,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
     <ePixmap position="60,669" size="35,27" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/red.png" alphatest="blend" />
     <ePixmap position="364,669" size="35,27" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/green.png" alphatest="blend" />
@@ -402,8 +402,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="75,180" zPosition="2" size="533,175" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_basevlcl.png" transparent="1" alphatest="blend" />
     <ePixmap position="669,180" zPosition="2" size="533,175" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_basevlcr.png" transparent="1" alphatest="blend" />
   </screen>
@@ -427,8 +427,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
   </screen>
   <!--DMC Weather Info-->
@@ -477,8 +477,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
   </screen>
   <!--<screen name="WeatherSetup" position="0,0" size="1280,720" title="Edit Weather Info Settings" flags="wfNoBorder" backgroundColor="#000">
 		<ePixmap name="mb_bg" position="0,0" zPosition="0" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/background.png"/>
@@ -522,8 +522,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
   </screen>
   <screen name="MSNWeatherPluginEntryConfigScreen" position="center,center" size="1280,720" flags="wfNoBorder">
     <widget name="config" position="329,228" size="624,300" scrollbarMode="showOnDemand" zPosition="6" transparent="1" />
@@ -541,8 +541,8 @@
     <widget source="global.CurrentTime" render="Label" position="1035,77" size="150,30" font="Regular; 23" halign="right" shadowColor="greyfont" shadowOffset="-1,-1" transparent="1" zPosition="2" backgroundColor="background" foregroundColor="greydate" valign="bottom">
       <convert type="ClockToText">WithSeconds</convert>
     </widget>
-    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos.png" zPosition="2" />
-    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/eos1.png" zPosition="1" alphatest="blend" />
+    <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
+    <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap name="mb_bg" position="0,0" zPosition="0" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fs8.png" />
     <ePixmap position="center,180" zPosition="2" size="644,357" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/back.png" transparent="1" alphatest="blend" />
     <ePixmap position="647,186" zPosition="5" size="140,20" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/yellow.png" transparent="1" alphatest="blend" />
