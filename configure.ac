@@ -392,7 +392,6 @@ lib/python/Plugins/Makefile
 lib/python/Plugins/Extensions/Makefile
 lib/python/Plugins/Extensions/bmediacenter/Makefile
 lib/python/Plugins/Extensions/bmediacenter/meta/Makefile
-lib/python/Plugins/Extensions/bmediacenter/po/Makefile
 lib/python/Plugins/Extensions/bmediacenter/src/Makefile
 lib/python/Plugins/Extensions/bmediacenter/src/converter/Makefile
 lib/python/Plugins/Extensions/bmediacenter/src/icons/Makefile
