@@ -391,7 +391,6 @@ lib/python/Screens/Makefile
 lib/python/Plugins/Makefile
 lib/python/Plugins/Extensions/Makefile
 lib/python/Plugins/Extensions/bmediacenter/Makefile
-lib/python/Plugins/Extensions/bmediacenter/CONTROL/Makefile
 lib/python/Plugins/Extensions/bmediacenter/meta/Makefile
 lib/python/Plugins/Extensions/bmediacenter/po/Makefile
 lib/python/Plugins/Extensions/bmediacenter/src/Makefile
