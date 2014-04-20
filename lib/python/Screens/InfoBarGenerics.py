@@ -657,8 +657,7 @@ class InfoBarChannelSelection:
 				"openSatellites": (self.openSatellites, _("open Satellites")),
 				"openFIND": (self.openFIND, _("open find service")),
                                 "showMediaCenter": (self.showMediaCenter, _("open Media Center")),
-                                "openVolup": (self.openVolup, _("open volume up")),
-                                "openVoldown": (self.openVoldown, _("open volume down")),   				
+				
 			})
 
         def openFIND(self):
@@ -669,14 +668,6 @@ class InfoBarChannelSelection:
                 from Plugins.Extensions.BMediaCenter.plugin import DMC_MainMenu
                 self.session.open(DMC_MainMenu) 
 
-	def openVoldown(self):
-	        from Components.VolumeControl import VolumeControl
-                VolumeControl.instance.volDown()
-                                
-	def openVolup(self):
-	        from Components.VolumeControl import VolumeControl
-                VolumeControl.instance.volUp()                            				
-			
 	def ChannelPlusPressed(self):
 		if config.usage.channelbutton_mode.getValue() == "0":
 			self.zapDown()
