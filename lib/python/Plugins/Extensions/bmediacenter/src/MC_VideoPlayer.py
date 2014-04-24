@@ -55,10 +55,10 @@ class MC_VideoPlayer(Screen, HelpableScreen):
 				"info": (self.showFileInfo, "Show File Info"),
 				"nextBouquet": (self.NextFavFolder, "Next Favorite Folder"),
 				"prevBouquet": (self.PrevFavFolder, "Previous Favorite Folder"),
-#				"red": (self.FavoriteFolders, "Favorite Folders"),
+				"red": (self.SelDelete, "Delete Movie"),
 				"blue": (self.KeySettings, "Settings"),
 			}, -2)
-
+                global currDir
 		currDir = config.plugins.mc_vp.lastDir.value
 		if not pathExists(currDir):
 			currDir = "/"
@@ -107,6 +107,16 @@ class MC_VideoPlayer(Screen, HelpableScreen):
 			self.cover()
 	def NextFavFolder(self):
 		return
+		
+	def SelDelete(self):
+		from Plugins.Extensions.MediaPlayer.plugin import MediaPlayer
+		config.mediaplayer.defaultDir.value = currDir
+		config.mediaplayer.defaultDir.save()		
+		self.session.open(MediaPlayer)
+		
+
+             		
+		
 	def PrevFavFolder(self):
 		return
 	def showFileInfo(self):
