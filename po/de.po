@@ -10864,3 +10864,8 @@ msgstr "umschalten und aufnehmen"
 msgid "zapped"
 msgstr "umgeschaltet"
 
+msgid "Device Setup"
+msgstr "Adapter Einstellungen"
+
+msgid "OpenVPN Setup"
+msgstr "OpenVPN Einstellungen"
