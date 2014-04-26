@@ -72,7 +72,7 @@ class PluginInstall(Screen):
 		self.remove_settings_name = ''
                 self["status"] = ScrollLabel()
 		self['key_green']  = Label(_('Install'))	
-		self['key_blue']  = Label(_('Ueberspringen'))
+		self['key_blue']  = Label(_('Exit'))
 		
 		if self.type == self.DOWNLOAD:
 			self["text"] = Label(_("Downloading plugin information. Please wait..."))
