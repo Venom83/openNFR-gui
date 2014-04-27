@@ -135,6 +135,8 @@ class SkinSelector(Screen, SkinSelectorBase):
 	DEFAULTSKIN = "< Default >"
 	PICONSKINXML = None
 	PICONDEFAULTSKIN = None
+	NFRSKINXML = None
+	NFRDEFAULTSKIN = None		
 
 	skinlist = []
 	root = os.path.join(eEnv.resolve("${datadir}"),"enigma2")
