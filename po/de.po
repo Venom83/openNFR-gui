@@ -10869,3 +10869,15 @@ msgstr "Adapter Einstellungen"
 
 msgid "OpenVPN Setup"
 msgstr "OpenVPN Einstellungen"
+
+#, python-format
+msgid "If you want to connect your %s %s to the Internet, this wizard will guide you through the basic network setup of your %s %s.\n\nPlease select the network interface that you want to use for your internet connection.\n\nPlease press OK to continue."
+msgstr "Falls sie Ihren %s %s mit dem Internetverbinden wollen, hilft Ihne dieser Assistent durch die Basis Einstellunegn Ihres Netzwerkes vom %s %s.\n\nBitte wählen sie den Netzwerkadapter den sie fuer die Internetverbindung einstellen moechten.\n\nFuer weiter bitte Ok druecken."
+
+#, python-format
+msgid "Please connect your %s %s to the internet"
+msgstr "Verbinden sie bitte Ihren %s %s mit dem Internet"
+
+#, python-format
+msgid "Your %s %s does not have an internet connection"
+msgstr "Ihre %s %s hat keine Verbindung zum Internet"
