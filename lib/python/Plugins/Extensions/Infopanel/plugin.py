@@ -68,7 +68,6 @@ from Screens.Swap import Swap
 from Plugins.Extensions.Infopanel.Manager import *
 from Plugins.Extensions.Infopanel.Softcam import *
 from Plugins.Extensions.Infopanel.QuickMenu import QuickMenu
-from Plugins.Extensions.Infopanel.sundtek import *
 from Plugins.Extensions.Infopanel.SoftwarePanel import SoftwarePanel
 from Plugins.SystemPlugins.SoftwareManager.BackupRestore import BackupScreen, RestoreScreen, BackupSelection, getBackupPath, getBackupFilename
 from Plugins.SystemPlugins.SoftwareManager.ImageBackup import ImageBackup
@@ -457,8 +456,6 @@ class Infopanel(Screen, InfoBarPiP):
 			self.session.open(MultiQuickButton)
 		elif menu == "MountManager":
 			self.session.open(HddSetup)
-		elif menu == "SundtekControlCenter":
-			self.session.open(SundtekControlCenter)
 		elif menu == "SwapManager":
 			self.session.open(Swap)
 		elif menu == "Red-Key-Action":
@@ -487,7 +484,6 @@ class Infopanel(Screen, InfoBarPiP):
 		self.tlist.append(MenuEntryItem((InfoEntryComponent('MountManager'), _("MountManager"), 'MountManager')))
 		self.tlist.append(MenuEntryItem((InfoEntryComponent('JobManager'), _("JobManager"), 'JobManager')))
 		self.tlist.append(MenuEntryItem((InfoEntryComponent('SwapManager'), _("SwapManager"), 'SwapManager')))
-		self.tlist.append(MenuEntryItem((InfoEntryComponent('SundtekControlCenter'), _("SundtekControlCenter"), 'SundtekControlCenter')))
 		if os.path.isfile("/usr/lib/enigma2/python/Plugins/Extensions/MultiQuickButton/plugin.pyo") is True:
 			self.tlist.append(MenuEntryItem((InfoEntryComponent('MultiQuickButton'), _("MultiQuickButton"), 'MultiQuickButton')))
 		self["Mlist"].moveToIndex(0)
