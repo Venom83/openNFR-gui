@@ -402,8 +402,6 @@ class Infopanel(Screen, InfoBarPiP):
 			self.session.open(Info, "InfoPanel")
 		elif menu == "Info":
 			self.session.open(Info, "Sytem_info")
-		elif menu == "Default":
-			self.session.open(Info, "Default")
 		elif menu == "FreeSpace":
 			self.session.open(Info, "FreeSpace")
 		elif menu == "Network":
@@ -505,7 +503,6 @@ class Infopanel(Screen, InfoBarPiP):
 		self.oldmlist1 = []
 		self.oldmlist = self.Mlist
 		self.tlist.append(MenuEntryItem((InfoEntryComponent('InfoPanel'), _("InfoPanel"), 'InfoPanel')))
-		self.tlist.append(MenuEntryItem((InfoEntryComponent('Default'), _("Default"), 'Default')))
 		self.tlist.append(MenuEntryItem((InfoEntryComponent('FreeSpace'), _("FreeSpace"), 'FreeSpace')))
 		self.tlist.append(MenuEntryItem((InfoEntryComponent('Kernel'), _("Kernel"), 'Kernel')))
 		self.tlist.append(MenuEntryItem((InfoEntryComponent('Mounts'), _("Mounts"), 'Mounts')))
@@ -800,8 +797,6 @@ class Info(Screen):
 			self.InfoPanel()
 		if info == "Sytem_info":
 			self.Sytem_info()
-		elif info == "Default":
-			self.Default()
 		elif info == "FreeSpace":
 			self.FreeSpace()
 		elif info == "Mounts":
@@ -871,24 +866,6 @@ class Info(Screen):
 		except:
 			self["label1"].setText(_("an internal error has occur"))
 
-	def Default(self):
-
-		try:
-			self["label2"].setText(_("Default"))
-			now = datetime.now()
-			info1 = 'Date = ' + now.strftime("%d-%B-%Y") + "\n"
-			info2 = 'Time = ' + now.strftime("%H:%M:%S") + "\n"
-			info3 = self.Do_cmd("uptime", None, None)
-			tmp = info3.split(",")
-			info3 = 'Uptime = ' + tmp[0].lstrip() + "\n"
-			info4 = self.Do_cmd("cat", "/etc/image-version", " | head -n 1")
-			info4 = info4[9:]
-			info4 = 'Boxtype = ' + info4 + "\n"
-			info5 = 'Load = ' + self.Do_cmd("cat", "/proc/loadavg", None)
-			info6 = self.Do_cut(info1 + info2 + info3 + info4 + info5)
-			self["label1"].setText(info6)
-		except:
-			self["label1"].setText(_("an internal error has occur"))
 
 	def FreeSpace(self):
 		try:
@@ -1049,6 +1026,3 @@ class Info(Screen):
 		except:
 			o = ''
 			return o
-
-
-
