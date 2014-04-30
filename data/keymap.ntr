@@ -133,7 +133,7 @@
 		<key id="BTN_0" mapto="zapUp" flags="mr" />
 		<key id="BTN_1" mapto="zapDown" flags="mr" />
 		<key id="KEY_SAT" mapto="openSatellites" flags="m" />
-		<key id="KEY_MEDIA" mapto="showMediaCenter" flags="m" />		
+		<key id="KEY_MEDIA" mapto="showMediaCenter" flags="l" />		
 	</map>
 	
 	<map context="InfobarHDMIActions">
@@ -234,7 +234,7 @@
 		<key id="KEY_TV" mapto="openBouquetList" flags="l" />
 		<key id="KEY_FAVORITES" mapto="openBouquetList" flags="b" />
 		<key id="KEY_FILE" mapto="showMovies" flags="m" />
-		<key id="KEY_MEDIA" mapto="showMovies" flags="m" />
+		<key id="KEY_MEDIA" mapto="showMovies" flags="b" />
 		<key id="KEY_LIST" mapto="showMediaPlayer" flags="b" />
 		<key id="KEY_PROGRAM" mapto="openTimerList" flags="b" />
 		<key id="KEY_SLOW" mapto="openTimerList" flags="b" />
