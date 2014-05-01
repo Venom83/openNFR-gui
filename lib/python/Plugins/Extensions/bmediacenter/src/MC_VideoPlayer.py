@@ -109,12 +109,19 @@ class MC_VideoPlayer(Screen, HelpableScreen):
 		return
 		
 	def SelDelete(self):
-		from Plugins.Extensions.MediaPlayer.plugin import MediaPlayer
-		config.mediaplayer.defaultDir.value = currDir
-		config.mediaplayer.defaultDir.save()		
-		self.session.open(MediaPlayer)
-		
+		self.filename = self.filelist.getFilename()
+		path = self.filename
+		self.session.openWithCallback(self.selremove, MessageBox, _("Do you really want to delete\n%s ?") % path, MessageBox.TYPE_YESNO)
 
+	def selremove(self, ret):
+		if ret is True:
+		        self.filename = self.filelist.getFilename()
+		        path = self.filename
+			os.remove(path)
+                        self.updd()
+                        
+		else:
+			pass
              		
 		
 	def PrevFavFolder(self):
