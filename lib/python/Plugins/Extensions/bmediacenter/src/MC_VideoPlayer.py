@@ -116,13 +116,16 @@ class MC_VideoPlayer(Screen, HelpableScreen):
 	def selremove(self, ret):
 		if ret is True:
 		        self.filename = self.filelist.getFilename()
-		        path = self.filename
-			os.remove(path)
+		        if self.filename.endswith('.ts'):
+		                path = self.filename.rstrip('.ts')
+		                #path = path + '.*'
+		        else:
+                                path = self.filename
+			os.system('rm "%s".*' % path)
                         self.updd()
                         
 		else:
 			pass
-             		
 		
 	def PrevFavFolder(self):
 		return
