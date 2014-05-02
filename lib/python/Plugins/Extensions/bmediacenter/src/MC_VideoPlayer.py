@@ -117,7 +117,7 @@ class MC_VideoPlayer(Screen, HelpableScreen):
 		if ret is True:
 		        self.filename = self.filelist.getFilename()
 		        if self.filename.endswith('.ts'):
-		                path = self.filename.rstrip('.ts')
+		                path = self.filename.replace('.ts', "")
 		                for fdelete in glob(path + ".*"):
 		                        os.remove (fdelete)
 		        else:
