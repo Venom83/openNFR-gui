@@ -1,4 +1,3 @@
-
 from enigma import eListboxPythonMultiContent, gFont, eEnv
 from boxbranding import getBoxType, getMachineName, getMachineBrand, getBrandOEM
 from Components.Console import Console
@@ -299,51 +298,71 @@ class QuickMenu(Screen):
 #### Softcamedit Menu ##############################
 	def Qsoftcamedit(self):
 		self.sublist = []
-		self.sublist.append(QuickSubMenuEntryComponent("Oscam Config Edit",_("Oscam Config Edit"),_("Oscam Config Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("CCcam Config Edit",_("CCcam Config Edit"),_("CCcam Config Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Mgcamd Config Edit",_("Mgcamd Config Edit"),_("Mgcamd Config Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Camd3 Config Edit",_("Camd3 Config Edit"),_("Camd3 Config Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Gbox Config Edit",_("Gbox Config Edit"),_("Gbox Config Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Wicard Config Edit",_("Wicard Config Edit"),_("Wicard Config Edit")))
+		if path.exists("/usr/keys/oscam.server") or path.exists("/usr/keys/oscam.user") or path.exists("/usr/keys/oscam.conf") or path.exists("/usr/keys/oscam.dvbapi"):
+			self.sublist.append(QuickSubMenuEntryComponent("Oscam Config Edit",_("Oscam Config Edit"),_("Oscam Config Edit")))
+		if path.exists("/usr/keys/CCcam.cfg"):
+                	self.sublist.append(QuickSubMenuEntryComponent("CCcam Config Edit",_("CCcam Config Edit"),_("CCcam Config Edit")))
+		if path.exists("/usr/keys/mg_cfg") or path.exists("/usr/keys/cccamd.list") or path.exists("/usr/keys/newcamd.list"):
+                	self.sublist.append(QuickSubMenuEntryComponent("Mgcamd Config Edit",_("Mgcamd Config Edit"),_("Mgcamd Config Edit")))
+		if path.exists("/usr/keys/camd3.config") or path.exists("/usr/keys/camd3.users") or path.exists("/usr/keys/camd3.servers"):
+                	self.sublist.append(QuickSubMenuEntryComponent("Camd3 Config Edit",_("Camd3 Config Edit"),_("Camd3 Config Edit")))
+		if path.exists("/usr/keys/gbox.cfg") or path.exists("/usr/keys/cwshare.cfg"): 
+                	self.sublist.append(QuickSubMenuEntryComponent("Gbox Config Edit",_("Gbox Config Edit"),_("Gbox Config Edit")))
+		if path.exists("/usr/keys/wicardd.conf"):
+                	self.sublist.append(QuickSubMenuEntryComponent("Wicard Config Edit",_("Wicard Config Edit"),_("Wicard Config Edit")))
 		self["sublist"].l.setList(self.sublist)		
 
 #### Oscam Edit Menu ##############################
 	def Qoscamedit(self):
 		self.sublist = []
-		self.sublist.append(QuickSubMenuEntryComponent("Oscam.server Edit",_("Oscam.server Edit"),_("open Oscam.server to Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Oscam.user Edit",_("Oscam.user Edit"),_("open Oscam.user to Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Oscam.conf Edit",_("Oscam.conf Edit"),_("open Oscam.conf to Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Oscam.dvbapi Edit",_("Oscam.dvbapi Edit"),_("open Oscam.dvbapi to Edit")))
+		if path.exists("/usr/keys/oscam.server"):
+			self.sublist.append(QuickSubMenuEntryComponent("Oscam.server Edit",_("Oscam.server Edit"),_("open Oscam.server to Edit")))
+                if path.exists("/usr/keys/oscam.user"):
+			self.sublist.append(QuickSubMenuEntryComponent("Oscam.user Edit",_("Oscam.user Edit"),_("open Oscam.user to Edit")))
+                if path.exists("/usr/keys/oscam.conf"):
+			self.sublist.append(QuickSubMenuEntryComponent("Oscam.conf Edit",_("Oscam.conf Edit"),_("open Oscam.conf to Edit")))
+                if path.exists("/usr/keys/oscam.dvbapi"):
+			self.sublist.append(QuickSubMenuEntryComponent("Oscam.dvbapi Edit",_("Oscam.dvbapi Edit"),_("open Oscam.dvbapi to Edit")))
 		self["sublist"].l.setList(self.sublist)
 #### Ccam Edit Menu ##############################
 	def QCCcamedit(self):
 		self.sublist = []
-		self.sublist.append(QuickSubMenuEntryComponent("CCcam.cfg Edit",_("CCcam.cfg Edit"),_("open CCcam.cfg to Edit")))
+		if path.exists("/usr/keys/CCcam.cfg"):
+			self.sublist.append(QuickSubMenuEntryComponent("CCcam.cfg Edit",_("CCcam.cfg Edit"),_("open CCcam.cfg to Edit")))
 		self["sublist"].l.setList(self.sublist)	
 #### Mgcamd Edit Menu ##############################
 	def QMgcamdedit(self):
 		self.sublist = []
-		self.sublist.append(QuickSubMenuEntryComponent("mg.cfg Edit",_("mg.cfg Edit"),_("open mg.cfg to Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("Mgcamd cccamd.list Edit",_("Mgcamd cccamd.list Edit"),_("open Mgcamd cccamd.list to Edit")))		
-		self.sublist.append(QuickSubMenuEntryComponent("Mgcamd newcamd.list Edit",_("Mgcamd newcamd.list Edit"),_("open Mgcamd newcamd.list to Edit")))		
+		if path.exists("/usr/keys/mg_cfg"):
+			self.sublist.append(QuickSubMenuEntryComponent("mg.cfg Edit",_("mg.cfg Edit"),_("open mg.cfg to Edit")))
+		if path.exists("/usr/keys/cccamd.list"):
+                	self.sublist.append(QuickSubMenuEntryComponent("Mgcamd cccamd.list Edit",_("Mgcamd cccamd.list Edit"),_("open Mgcamd cccamd.list to Edit")))		
+		if path.exists("/usr/keys/newcamd.list"):
+                	self.sublist.append(QuickSubMenuEntryComponent("Mgcamd newcamd.list Edit",_("Mgcamd newcamd.list Edit"),_("open Mgcamd newcamd.list to Edit")))		
 		self["sublist"].l.setList(self.sublist)	
 #### Camd3 Edit Menu ##############################
 	def QCamd3edit(self):
 		self.sublist = []
-		self.sublist.append(QuickSubMenuEntryComponent("camd3.config Edit",_("camd3.config Edit"),_("open camd3.config to Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("camd3.users Edit",_("camd3.users Edit"),_("open camd3.users to Edit")))		
-		self.sublist.append(QuickSubMenuEntryComponent("camd3.servers Edit",_("camd3.servers Edit"),_("open camd3.servers to Edit")))		
+		if path.exists("/usr/keys/camd3.config"):
+			self.sublist.append(QuickSubMenuEntryComponent("camd3.config Edit",_("camd3.config Edit"),_("open camd3.config to Edit")))
+		if path.exists("/usr/keys/camd3.users"):
+                	self.sublist.append(QuickSubMenuEntryComponent("camd3.users Edit",_("camd3.users Edit"),_("open camd3.users to Edit")))		
+		if path.exists("/usr/keys/camd3.servers"):
+                	self.sublist.append(QuickSubMenuEntryComponent("camd3.servers Edit",_("camd3.servers Edit"),_("open camd3.servers to Edit")))		
 		self["sublist"].l.setList(self.sublist)	
 #### Gbox Edit Menu ##############################
 	def QGboxedit(self):
 		self.sublist = []
-		self.sublist.append(QuickSubMenuEntryComponent("gbox.cfg Edit",_("gbox.cfg Edit"),_("open gbox.cfg to Edit")))
-		self.sublist.append(QuickSubMenuEntryComponent("cwshare.cfg Edit",_("cwshare.cfg Edit"),_("open cwshare.cfg to Edit")))		
+		if path.exists("/usr/keys/gbox.cfg"):
+			self.sublist.append(QuickSubMenuEntryComponent("gbox.cfg Edit",_("gbox.cfg Edit"),_("open gbox.cfg to Edit")))
+		if path.exists("/usr/keys/cwshare.cfg"):
+                	self.sublist.append(QuickSubMenuEntryComponent("cwshare.cfg Edit",_("cwshare.cfg Edit"),_("open cwshare.cfg to Edit")))		
 		self["sublist"].l.setList(self.sublist)	
 #### Wicardd Edit Menu ##############################
 	def QWicarddedit(self):
 		self.sublist = []
-		self.sublist.append(QuickSubMenuEntryComponent("wicardd.conf Edit",_("wicardd.conf Edit"),_("open wicardd.conf to Edit")))
+		if path.exists("/usr/keys/wicardd.conf"):
+			self.sublist.append(QuickSubMenuEntryComponent("wicardd.conf Edit",_("wicardd.conf Edit"),_("open wicardd.conf to Edit")))
 		self["sublist"].l.setList(self.sublist)	
 		
 ######## A/V Settings Menu ##############################
@@ -988,5 +1007,3 @@ class QuickMenuDevices(Screen):
 			png = LoadPixmap(mypixmap)
 			res = (name, des, png)
 			self.devicelist.append(res)
-
-
