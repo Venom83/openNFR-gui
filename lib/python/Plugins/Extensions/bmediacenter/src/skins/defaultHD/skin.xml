@@ -251,9 +251,9 @@
     <ePixmap position="420,62" size="459,60" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr.png" zPosition="2" />
     <ePixmap name="new ePixmap" position="center,60" size="474,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/nfr1.png" zPosition="1" alphatest="blend" />
     <ePixmap position="center,175" zPosition="2" size="802,383" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/frame_base-fsm.png" transparent="1" alphatest="blend" />
-    <eLabel text="HDD" position="436,588" size="60,22" font="Regular; 18" transparent="1" halign="right" zPosition="5" foregroundColor="grey" />
-    <eLabel text="free" position="496,588" size="60,22" font="Regular; 18" transparent="1" halign="left" zPosition="6" foregroundColor="grey" />
-    <widget render="mvmHDDfree" source="global.CurrentTime" position="558,588" size="300,22" font="Regular;18" foregroundColor="cyan1" zPosition="6" halign="left" transparent="1" />
+    <eLabel text="HDD" position="459,588" size="60,22" font="Regular; 18" transparent="1" halign="right" zPosition="5" foregroundColor="grey" />
+    <eLabel text="free" position="519,588" size="60,22" font="Regular; 18" transparent="1" halign="left" zPosition="6" foregroundColor="grey" />
+    <widget render="mvmHDDfree" source="global.CurrentTime" position="598,588" size="300,22" font="Regular;18" foregroundColor="cyan1" zPosition="6" halign="left" transparent="1" />
     <ePixmap position="center,630" zPosition="4" size="394,65" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/butt_mp.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/BMediaCenter/skins/defaultHD/images/red.png" position="80,586" zPosition="2" size="35,30" transparent="1" alphatest="on" />
     <widget name="key_red" position="122,588" zPosition="3" size="214,22" font="Regular;21" valign="center" halign="left" backgroundColor="grey" transparent="1" />
