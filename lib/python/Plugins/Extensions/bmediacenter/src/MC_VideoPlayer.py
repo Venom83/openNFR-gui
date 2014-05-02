@@ -36,7 +36,7 @@ class MC_VideoPlayer(Screen, HelpableScreen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		HelpableScreen.__init__(self)
-		self["key_red"] = Button(_("Favorites"))
+		self["key_red"] = Button(_("Delete Movie"))
 		self["key_yellow"] = Button("")
 		self["key_blue"] = Button(_("Settings"))
 		self["currentfolder"] = Label("")
