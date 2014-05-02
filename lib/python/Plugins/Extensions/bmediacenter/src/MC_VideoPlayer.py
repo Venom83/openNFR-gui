@@ -120,6 +120,12 @@ class MC_VideoPlayer(Screen, HelpableScreen):
 		                path = self.filename.replace('.ts', "")
 		                for fdelete in glob(path + ".*"):
 		                        os.remove (fdelete)
+		        elif self.filename.endswith('.vob'):
+		                path = self.filename.replace('.vob', "")
+		                print "path:", path
+		                for fdelete in glob(path + ".*"):
+		                        print "fdelete:", fdelete
+		                        os.remove (fdelete)	                        
 		        else:
                                 path = self.filename
 			        os.remove(path)
