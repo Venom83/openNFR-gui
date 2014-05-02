@@ -12,6 +12,8 @@ from Screens.InfoBar import MoviePlayer as OrgMoviePlayer
 from Tools.Directories import resolveFilename, pathExists, fileExists, SCOPE_MEDIA
 from MC_Filelist import FileList
 from GlobalFunctions import shortname, MC_VideoInfoView, Showiframe
+from glob import glob
+from Screens.MessageBox import MessageBox
 import re
 import os
 config.plugins.mc_vp = ConfigSubsection()
