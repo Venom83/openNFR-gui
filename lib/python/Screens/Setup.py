@@ -231,17 +231,17 @@ class Setup(ConfigListScreen, Screen):
 			if x.tag == 'item':
 				item_level = int(x.get("level", 0))
 
-				if not self.onNotifiers:
-					self.onNotifiers.append(self.levelChanged)
+				if not self.levelChanged in config.usage.setup_level.notifiers:
+					config.usage.setup_level.notifiers.append(self.levelChanged)
 					self.onClose.append(self.removeNotifier)
 
-				if item_level > self.onNotifiers.index:
+				if item_level > config.usage.setup_level.index:
 					continue
 
 				requires = x.get("requires")
 				if requires and requires.startswith('config.'):
 					item = eval(requires or "")
-					if item.getValue() and not item.getValue() == "0":
+					if item.value and not item.value == "0":
 						SystemInfo[requires] = True
 					else:
 						SystemInfo[requires] = False
