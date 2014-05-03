@@ -12,7 +12,7 @@ config.plugins.mc_favorites.foldercount = ConfigInteger(0)
 config.plugins.mc_favorites.folders = ConfigSubList()
 
 config.plugins.mc_globalsettings = ConfigSubsection()
-config.plugins.mc_globalsettings.showinmainmenu = ConfigYesNo(default=True)
+config.plugins.mc_globalsettings.showinmainmenu = ConfigYesNo(default=False)
 config.plugins.mc_globalsettings.showinextmenu = ConfigYesNo(default=False)
 config.plugins.mc_globalsettings.currentversion = ConfigInteger(0, (0, 999))
 config.plugins.mc_globalsettings.currentplatform = ConfigText(default = currentmcplatform)
@@ -20,7 +20,7 @@ config.plugins.mc_globalsettings.currentplatform = ConfigText(default = currentm
 config.plugins.mc_globalsettings.currentversion.value = currentmcversion
 config.plugins.mc_globalsettings.currentplatform.value = currentmcplatform
 
-PluginLanguageDomain = "HDMUMediaCenter"
+PluginLanguageDomain = "OPenNFR-MediaCenter"
 PluginLanguagePath = "Extensions/BMediaCenter/locale"
 # Load Language
 def localeInit():
