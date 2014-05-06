@@ -1,7 +1,7 @@
 from boxbranding import getMachineBrand, getMachineName
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
-
+import os
 from enigma import eTimer, eEnv
 
 from Screens.Screen import Screen
@@ -448,7 +448,13 @@ class Wizard(Screen):
 			if self.wizard[self.currStep].has_key("onselect"):
 				self.selection = self["list"].current[-1]
 				print "self.selection:", self.selection
+				if self.selection == 'eth0' or self.selection == 'wlan0' or self.selection == 'ra0':
+					os.system("echo %s > /tmp/netwizardselection" % self.selection) 
 				exec("self." + self.wizard[self.currStep]["onselect"] + "()")
+				#f = open("/tmp/netwizardselection", "w")
+				#name = self.selection	
+                		#f.write("\n".join(map(lambda x: str(x), name)))	
+                		#f.close() 
 
 	def resetCounter(self):
 		self.timeoutCounter = self.wizard[self.currStep]["timeout"]
