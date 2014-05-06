@@ -4,6 +4,7 @@ from socket import *
 from Components.Console import Console
 from Components.PluginComponent import plugins
 from Plugins.Plugin import PluginDescriptor
+from boxbranding import getBoxType
 
 class Network:
 	def __init__(self):
@@ -164,10 +165,14 @@ class Network:
 		self.writeNameserverConfig()
 
 	def writeNameserverConfig(self):
-		fp = file('/etc/resolv.conf', 'w')
-		for nameserver in self.nameservers:
-			fp.write("nameserver %d.%d.%d.%d\n" % tuple(nameserver))
-		fp.close()
+		try:
+			os.system('rm -rf /etc/resolv.conf')
+			fp = file('/etc/resolv.conf', 'w')
+			for nameserver in self.nameservers:
+				fp.write("nameserver %d.%d.%d.%d\n" % tuple(nameserver))
+			fp.close()
+		except:
+			print "[Network.py] interfaces - resolv.conf write failed"
 
 	def loadNetworkConfig(self,iface,callback = None):
 		interfaces = []
@@ -276,8 +281,11 @@ class Network:
 				self.wlan_interfaces.append(iface)
 		else:
 			if iface not in self.lan_interfaces:
-				name = _("LAN connection")
-				if len(self.lan_interfaces):
+				if getBoxType() == "et10000" and iface == "eth1":
+					name = _("VLAN connection")
+				else:	
+					name = _("LAN connection")	
+				if len(self.lan_interfaces) and not getBoxType() == "et10000" and not iface == "eth1":
 					name += " " + str(len(self.lan_interfaces)+1)
 				self.lan_interfaces.append(iface)
 		return name
