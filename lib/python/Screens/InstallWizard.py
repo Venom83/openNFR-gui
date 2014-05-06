@@ -4,6 +4,7 @@ from Components.Sources.StaticText import StaticText
 from Components.config import config, ConfigSubsection, ConfigBoolean, getConfigListEntry, ConfigSelection, ConfigYesNo, ConfigIP
 from Components.Network import iNetwork
 from Components.Ipkg import IpkgComponent
+from Plugins.Extensions.Infopanel.PluginWizard import PluginInstall
 from enigma import eDVBDB
 import os
 
@@ -131,7 +132,12 @@ class InstallWizard(Screen, ConfigListScreen):
 	def run(self):
 		if self.index == self.STATE_UPDATE:
 			if config.misc.installwizard.hasnetwork.value:
+				self.run1()
 				self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (updating packages)'), IpkgComponent.CMD_UPDATE)
+
+	def run1(self):
+                self.session.open(PluginInstall)
+                return		
 		elif self.index == self.STATE_CHOISE_CHANNELLIST and self.enabled.value:
 			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_REMOVE, {'package': 'enigma2-plugin-settings-' + self.channellist_type.value})
 		elif self.index == self.STATE_CHOISE_SOFTCAM and self.enabled.value:
@@ -160,6 +166,7 @@ class InstallWizardIpkgUpdater(Screen):
 		self.ipkg = IpkgComponent()
 		self.ipkg.addCallback(self.ipkgCallback)
 
+		self.ipkg.startCmd(cmd, pkg)
 		if self.index == InstallWizard.STATE_CHOISE_CHANNELLIST:
 			self.ipkg.startCmd(cmd, {'package': 'enigma2-plugin-settings-*'})
 		else:
@@ -169,6 +176,8 @@ class InstallWizardIpkgUpdater(Screen):
 		if event == IpkgComponent.EVENT_DONE:
 			if self.index == InstallWizard.STATE_UPDATE:
 				config.misc.installwizard.ipkgloaded.value = True
+				self.close()
+				
 			elif self.index == InstallWizard.STATE_CHOISE_CHANNELLIST:
 				if self.state == 0:
 					self.ipkg.startCmd(IpkgComponent.CMD_INSTALL, self.pkg)
