@@ -132,25 +132,14 @@ class InstallWizard(Screen, ConfigListScreen):
 	def run(self):
 		if self.index == self.STATE_UPDATE:
 			if config.misc.installwizard.hasnetwork.value:
-				self.run1()
+			        self.session.open(PluginInstall)
 				self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (updating packages)'), IpkgComponent.CMD_UPDATE)
-
+						
+                self.run1()
+                
 	def run1(self):
                 self.session.open(PluginInstall)
-                return		
-		elif self.index == self.STATE_CHOISE_CHANNELLIST and self.enabled.value:
-			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_REMOVE, {'package': 'enigma2-plugin-settings-' + self.channellist_type.value})
-		elif self.index == self.STATE_CHOISE_SOFTCAM and self.enabled.value:
-			softcam_name = self.softcam_type.value
-			if softcam_name == "cccam":
-				cmd = (";rm /tmp/Addon.tgz;wget -q http://egami-image.com./image-feed/enigma2/softcams_cfg/cccam_230_egami_E2.tar.gz -O /tmp/Addon.tgz")
-			elif softcam_name == "wicardd":
-				cmd = (";rm /tmp/Addon.tgz;wget -q http://egami-image.com./image-feed/enigma2/softcams_cfg/wicardd_115_egami_E2.tar.gz -O /tmp/Addon.tgz")
-			elif softcam_name == "gbox":
-				cmd = (";rm /tmp/Addon.tgz;wget -q http://egami-image.com./image-feed/enigma2/softcams_cfg/gbox_804_egami_E2.tar.gz -O /tmp/Addon.tgz")
-			cmd += (';cd /; tar -xz -f /tmp/Addon.tgz ; rm /tmp/Addon.tgz;rm /usr/sbin/nab_e2_restart.sh; chmod 755 /tmp/egami_e2_installer.sh; /tmp/egami_e2_installer.sh; rm /tmp/egami_e2_installer.sh')
-			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading softcam)'), IpkgComponent.CMD_INSTALL, {'package': cmd})
-		return
+                return
 
 
 class InstallWizardIpkgUpdater(Screen):
