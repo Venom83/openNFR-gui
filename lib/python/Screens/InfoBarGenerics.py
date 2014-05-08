@@ -657,7 +657,7 @@ class InfoBarChannelSelection:
 				"openSatellites": (self.openSatellites, _("open Satellites")),
 				"openFIND": (self.openFIND, _("open find service")),
                                 "showMediaCenter": (self.showMediaCenter, _("open Media Center")),
-                                "toggleShow": (self.toggleShow, _("toggleShow")),								
+                              								
 				
 			})
 
@@ -668,24 +668,6 @@ class InfoBarChannelSelection:
         def showMediaCenter(self):
                 from Plugins.Extensions.BMediaCenter.plugin import DMC_MainMenu
                 self.session.open(DMC_MainMenu)
-
-	def toggleShow(self):
-		if self.__state == self.STATE_HIDDEN:
-			if not self.secondInfoBarWasShown:
-				self.show()
-			if self.secondInfoBarScreen:
-				self.secondInfoBarScreen.hide()
-			self.secondInfoBarWasShown = False
-		elif self.secondInfoBarScreen and config.usage.show_second_infobar.getValue() and not self.secondInfoBarScreen.shown:
-			self.secondInfoBarScreen.show()
-			self.startHideTimer()
-		elif isMoviePlayerInfoBar(self) and config.usage.show_second_infobar.getValue():
-			self.hide()
-			self.startHideTimer()
-		else:
-			self.hide()
-			if self.secondInfoBarScreen and self.secondInfoBarScreen.shown:
-				self.secondInfoBarScreen.hide()				
 
 	def ChannelPlusPressed(self):
 		if config.usage.channelbutton_mode.getValue() == "0":
