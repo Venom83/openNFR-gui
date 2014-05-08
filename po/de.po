@@ -3090,6 +3090,9 @@ msgstr "Netzwerkadapterübersicht beenden"
 msgid "Exit network wizard"
 msgstr "Netzwerkassistent beenden"
 
+msgid "Scan available networks"
+msgstr "Suche verfuegbare Wlannetze"
+
 msgid "Exit the wizard"
 msgstr "Assistent beenden"
 
