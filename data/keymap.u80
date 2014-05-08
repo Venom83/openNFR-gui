@@ -80,7 +80,7 @@
 	  <!--<key id="KEY_RED" mapto="RedPressed" flags="b" />-->
 		<key id="KEY_I" mapto="IPressed" flags="b" />
 		<!--<key id="KEY_INFO" mapto="InfoPressed" flags="b" />-->
-		<key id="KEY_INFO" mapto="showSingleEPG" flags="b" />
+		<!--<key id="KEY_INFO" mapto="showSingleEPG" flags="b" />-->
 		<key id="KEY_INFO" mapto="showEventInfoPlugin" flags="l" />
 		<key id="KEY_EPG" mapto="EPGPressed" flags="b" />
 		<key id="KEY_EPG" mapto="showEventGuidePlugin" flags="l" />
@@ -119,9 +119,7 @@
 		<key id="BTN_0" mapto="zapUp" flags="mr" />
 		<key id="BTN_1" mapto="zapDown" flags="mr" />
 		<key id="KEY_SAT" mapto="openSatellites" flags="m" />
-		<!--<key id="KEY_INFO" mapto="switchChannelUp" flags="m" />-->
-		<key id="KEY_OK" mapto="switchChannelUp" flags="l" />
-		<key id="KEY_OK" mapto="toggleShow" flags="b" />		
+		<key id="KEY_OK" mapto="switchChannelUp" flags="m" />
 		<key id="KEY_MEDIA" mapto="showMediaCenter" flags="l" />		
 	</map>
 
@@ -193,7 +191,7 @@
 	</map>
 
 	<map context="InfobarShowHideActions">
-		<!--<key id="KEY_INFO" mapto="toggleShow" flags="m" />-->
+		<key id="KEY_INFO" mapto="toggleShow" flags="b" />
 		<key id="KEY_ENTER" mapto="toggleShow" flags="m" />
 		<key id="KEY_EXIT" mapto="hide" flags="m" />
 		<key id="KEY_ESC" mapto="hide" flags="m" />
@@ -880,4 +878,3 @@
 		<key id="KEY_RIGHT" mapto="down" flags="mr" />
 	</map>	
 </keymap>
-
