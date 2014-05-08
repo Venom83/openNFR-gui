@@ -131,10 +131,6 @@ class InstallWizardIpkgUpdater(Screen):
 		self.ipkg.addCallback(self.ipkgCallback)
 
 		self.ipkg.startCmd(cmd, pkg)
-		if self.index == InstallWizard.STATE_CHOISE_CHANNELLIST:
-			self.ipkg.startCmd(cmd, {'package': 'enigma2-plugin-settings-*'})
-		else:
-			self.ipkg.startCmd(cmd, pkg)
 
 	def ipkgCallback(self, event, param):
 		if event == IpkgComponent.EVENT_DONE:
@@ -142,4 +138,4 @@ class InstallWizardIpkgUpdater(Screen):
 				config.misc.installwizard.ipkgloaded.value = True
 
 				self.close()
-
+				
