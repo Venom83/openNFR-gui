@@ -71,3 +71,4 @@ void evfd::vfd_write_string(char * str)
 	fprintf(f,"%s", str);
 	
 	fclose(f);
+}
