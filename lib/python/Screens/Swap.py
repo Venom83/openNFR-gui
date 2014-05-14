@@ -26,7 +26,7 @@ class Swap(ConfigListScreen, Screen):
                      <widget name="key_yellow" position="508,499" zPosition="3" size="150,22" valign="center" halign="center" font="Regular; 21" transparent="1" backgroundColor="foreground" />
                      <widget name="key_blue" position="736,499" zPosition="3" size="150,22" valign="center" halign="center" font="Regular; 21" transparent="1" backgroundColor="foreground" />
                      <eLabel text="Swapp Manager" zPosition="2" position="10,11" size="880,40" halign="left" font="Regular;28" foregroundColor="un538eff" transparent="1" shadowColor="black" shadowOffset="-1,-1" backgroundColor="black" />
-                      <widget name="config" position="11,56" scrollbarMode="showOnDemand" selectionPixmap="skin_default/sel_26.png" size="880,380" transparent="1" />
+                      <widget name="config" position="11,56" scrollbarMode="showOnDemand" size="880,380" transparent="1" />
                      <widget font="Regular; 22" halign="left" name="status" position="11,441" size="880,25" foregroundColor="yellow" backgroundColor="black" transparent="1" />
                      </screen> """
 

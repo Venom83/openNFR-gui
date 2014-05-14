@@ -31,7 +31,7 @@ class HddInfo(ConfigListScreen, Screen):
                        <widget font="Regular;22" halign="left" name="readDisk" position="10,240" size="880,26" transparent="1" zPosition="1" />
                        <widget font="Regular;22" halign="left" name="readCache" position="10,266" size="880,26" transparent="1" zPosition="1" />
                        <widget font="Regular;22" halign="left" name="temp" position="10,292" size="880,26" transparent="1" zPosition="1" />
-                       <widget name="config" position="10,57" size="880,400" scrollbarMode="showOnDemand" selectionPixmap="skin_default/sel_26.png" transparent="1" />
+                       <widget name="config" position="10,57" size="880,400" scrollbarMode="showOnDemand" transparent="1" />
                        <widget name="key_red" position="47,499" zPosition="2" size="214,22" valign="center" halign="center" font="Regular; 20" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
                        <widget name="key_blue" position="675,499" zPosition="3" size="214,22" valign="center" halign="center" font="Regular; 21" transparent="1" backgroundColor="foreground" />
                    </screen> """

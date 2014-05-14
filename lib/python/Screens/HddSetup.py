@@ -19,9 +19,9 @@ import sys
 
 def DiskEntry(model, size, removable):
 	if removable:
-		picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/diskusb.png"));
+		picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/diskusb.png"));
 	else:
-		picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/disk.png"));
+		picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/disk.png"));
 		
 	return (picture, model, size)
 	
@@ -29,7 +29,7 @@ class HddSetup(Screen):
 
 	skin = """
                    <screen name="HddSetup" position="center,115" size="900,530" title="HddSetup" flags="wfBorder">
-                      <widget source="menu" render="Listbox" position="10,10" size="880,450" scrollbarMode="showOnDemand" selectionPixmap="skin_default/sel_50.png" transparent="1">
+                      <widget source="menu" render="Listbox" position="10,10" size="880,450" scrollbarMode="showOnDemand" transparent="1">
                          <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),

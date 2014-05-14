@@ -17,14 +17,14 @@ import os
 import sys
 
 def PartitionEntry(description, size):
-	picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/partitionmanager.png"));
+	picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/partitionmanager.png"));
 		
 	return (picture, description, size)
 
 class HddPartitions(Screen):
 	skin = """
                    <screen name="HddPartitions" position="center,115" size="900,530" title="HddPartitions" flags="wfBorder">
-                        <widget source="menu" render="Listbox" position="10,47" size="880,410" scrollbarMode="showOnDemand" selectionPixmap="skin_default/sel_50.png" transparent="1">
+                        <widget source="menu" render="Listbox" position="10,47" size="880,410" scrollbarMode="showOnDemand" transparent="1">
                         <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 7), size = (48, 48), png = 0),

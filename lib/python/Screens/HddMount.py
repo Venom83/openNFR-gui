@@ -34,7 +34,7 @@ class HddMount(Screen):
                       <widget name="key_yellow" position="508,499" zPosition="3" size="150,22" valign="center" halign="center" font="Regular; 21" transparent="1" backgroundColor="foreground" />
                       <widget name="key_blue" position="736,499" zPosition="3" size="150,22" valign="center" halign="center" font="Regular; 21" transparent="1" backgroundColor="foreground" />
                      <eLabel text="Hard Drive Mount" zPosition="2" position="10,11" size="880,40" halign="left" font="Regular;28" foregroundColor="un538eff" transparent="1" shadowColor="black" shadowOffset="-1,-1" backgroundColor="black" />
-                      <widget name="menu" position="10,59" size="880,410" scrollbarMode="showOnDemand" selectionPixmap="skin_default/sel_26.png" transparent="1" />
+                      <widget name="menu" position="10,59" size="880,410" scrollbarMode="showOnDemand" transparent="1" />
                     </screen> """
                     
 	def __init__(self, session, device, partition):
@@ -151,7 +151,7 @@ class HddMount(Screen):
 		self.close()
 		
 def MountEntry(description, details):
-	picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/diskusb.png"));
+	picture = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/diskusb.png"));
 
 	return (picture, description, details)
 			
@@ -168,7 +168,7 @@ class HddFastRemove(Screen):
                       <widget name="key_yellow" position="508,499" zPosition="3" size="150,22" valign="center" halign="center" font="Regular; 21" transparent="1" backgroundColor="foreground" />
                       <widget name="key_blue" position="736,499" zPosition="3" size="150,22" valign="center" halign="center" font="Regular; 21" transparent="1" backgroundColor="foreground" />
                       <eLabel text="Hard Drive Remove" zPosition="2" position="10,11" size="880,40" halign="left" font="Regular;28" foregroundColor="un538eff" transparent="1" shadowColor="black" shadowOffset="-1,-1" backgroundColor="black" />
-                      <widget source="menu" render="Listbox" position="11,58" size="880,410" scrollbarMode="showOnDemand" selectionPixmap="skin_default/sel_50.png" transparent="1">
+                      <widget source="menu" render="Listbox" position="11,58" size="880,410" scrollbarMode="showOnDemand" transparent="1">
                       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),

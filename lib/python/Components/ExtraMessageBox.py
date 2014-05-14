@@ -7,16 +7,16 @@ from Tools.LoadPixmap import LoadPixmap
 from Components.Label import Label
 
 def MessageBoxEntry(name, picture):
-	pixmap = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/eosteam_others/" + picture));
+	pixmap = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/" + picture));
 	if not pixmap:
-		pixmap = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/eosteam_others/empty.png"));
+		pixmap = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/icons/empty.png"));
 		
 	return (pixmap, name)
 	
 class ExtraMessageBox(Screen):
         skin = """
                 <screen name="ExtraMessageBox" position="center,center" size="600,400" title="ExtraMessageBox" flags="wfBorder">
-                    <widget source="menu" render="Listbox" position="5,54" size="585,340" scrollbarMode="showOnDemand" selectionPixmap="skin_default/sel_50.png" transparent="1" zPosition="1">
+                    <widget source="menu" render="Listbox" position="5,54" size="585,340" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
                     <convert type="TemplatedMultiContent">
                       {"template": [
                              MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 0),
