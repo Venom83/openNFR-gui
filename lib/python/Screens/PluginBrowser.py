@@ -189,10 +189,12 @@ class PluginDownloadBrowser(Screen):
 			self.ipkg = '/usr/bin/opkg'
 			self.ipkg_install = self.ipkg + ' install --force-overwrite'
 			self.ipkg_remove =  self.ipkg + ' remove --autoremove --force-depends'
+			self.ipkg_install1 = self.ipkg_install + ' --force-depends'
 		else:
 			self.ipkg = 'ipkg'
 			self.ipkg_install = 'ipkg install --force-overwrite -force-defaults'
 			self.ipkg_remove =  self.ipkg + ' remove --autoremove --force-depends'
+			self.ipkg_install1 = self.ipkg_install + ' --force-depends'
 
 	def go(self):
 		sel = self["list"].l.getCurrentSelection()
@@ -293,7 +295,11 @@ class PluginDownloadBrowser(Screen):
 		self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_remove + Ipkg.opkgExtraDestinations() + " " + self.PLUGIN_PREFIX + pkgname, "sync"], closeOnSuccess = True)
 
 	def doInstall(self, callback, pkgname):
-		self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_install + " " + self.PLUGIN_PREFIX + pkgname, "sync"], closeOnSuccess = True)
+	        if "mgcamd" in pkgname or "scam" in pkgname or "gbox" in pkgname:
+	                print "install mgcamd1"
+		        self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_install1 + " " + self.PLUGIN_PREFIX + pkgname, "sync"], closeOnSuccess = True)	        
+	        else: 
+		        self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_install + " " + self.PLUGIN_PREFIX + pkgname, "sync"], closeOnSuccess = True)
 
 	def runSettingsRemove(self, val):
 		if val:
