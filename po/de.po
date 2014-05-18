@@ -10900,12 +10900,6 @@ msgstr "Inaktivitaet-AusschaltTimer"
 msgid "Sleeptimer"
 msgstr "AusschaltTimer"
 
-msgid "Shutdown"
-msgstr "ausschalten"
-
-msgid "do nothing"
-msgstr "nichts machen"
-
 msgid "Shutdown when in Standby"
 msgstr "Ausschalten aus dem Standby"
 
