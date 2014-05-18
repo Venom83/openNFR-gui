@@ -4698,8 +4698,8 @@ msgstr "Kein verwendbarer Sat Tuner gefunden!"
 msgid "No tags are set on these movies."
 msgstr "Keine Tags für diese Filme gesetzt."
 
-msgid "No timeout"
-msgstr "Kein Timeout"
+msgid "no timeout"
+msgstr "kein Timeout"
 
 msgid "No to all"
 msgstr "Nein zu allen"
