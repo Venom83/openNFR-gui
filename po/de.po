@@ -10884,3 +10884,39 @@ msgstr "Verbinden sie bitte Ihren %s %s mit dem Internet"
 #, python-format
 msgid "Your %s %s does not have an internet connection"
 msgstr "Ihre %s %s hat keine Verbindung zum Internet"
+
+msgid "Specify timeframe to ignore inactivity sleeptimer"
+msgstr "Spezifiziere den Zeitbereich, in dem der Inaktivitaet-Sleeptimer ignoriert werden soll"
+
+msgid "Start time to ignore inactivity sleeptimer"
+msgstr "Startzeit zum Ignorieren des Inaktivitaet-AusschaltTimers"
+
+msgid "End time to ignore inactivity sleeptimer"
+msgstr "Endzeit zum Ignorieren des Inaktivitaet-AusschaltTimers"
+
+msgid "Inactivity Sleeptimer"
+msgstr "Inaktivitaet-AusschaltTimer"
+
+msgid "Sleeptimer"
+msgstr "AusschaltTimer"
+
+msgid "Shutdown"
+msgstr "ausschalten"
+
+msgid "do nothing"
+msgstr "nichts machen"
+
+msgid "Shutdown when in Standby"
+msgstr "Ausschalten aus dem Standby"
+
+msgid "after"
+msgstr "nach"
+
+msgid "SleepTimer Configuration"
+msgstr "AusschaltTimer Konfiguration"
+
+msgid "Shutown after current event"
+msgstr "Ausschalten nach aktuellen Vorgang"
+
+msgid "Standby after current event"
+msgstr "Standby nach aktuellen Vorgang"
