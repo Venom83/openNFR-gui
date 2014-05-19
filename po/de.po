@@ -3,15 +3,15 @@ msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-29 18:35+0100\n"
-"PO-Revision-Date: 2014-01-30 18:00+0100\n"
-"Last-Translator: Ralf Biedermann <ralf.biedermann@rbsoft.de>\n"
+"PO-Revision-Date: 2014-05-19 14:56+0100\n"
+"Last-Translator: \n"
 "Language-Team: AndyBlacburn, j-ot&Trial\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SourceCharset: iso-8859-15\n"
 
 msgid ""
@@ -6308,8 +6308,8 @@ msgid ""
 "Select if you want to use the ViX colored buttons (set to 'no' if you want "
 "to use (Multi Quick Button)."
 msgstr ""
-"Wähle ob Du die ViX Farbtasten benutzen möchtest ('Nein' wenn Du (Multi-)"
-"QuickButton benutzen möchtest):"
+"Wähle ob Du die ViX Farbtasten benutzen möchtest ('Nein' wenn Du "
+"(Multi-)QuickButton benutzen möchtest):"
 
 msgid "Select input device"
 msgstr "Wähle Eingabegerät"
@@ -10874,8 +10874,22 @@ msgid "OpenVPN Setup"
 msgstr "OpenVPN Einstellungen"
 
 #, python-format
-msgid "If you want to connect your %s %s to the Internet, this wizard will guide you through the basic network setup of your %s %s.\n\nPlease select the network interface that you want to use for your internet connection.\n\nPlease press OK to continue."
-msgstr "Falls sie Ihren %s %s mit dem Internetverbinden wollen, hilft Ihne dieser Assistent durch die Basis Einstellunegn Ihres Netzwerkes vom %s %s.\n\nBitte wählen sie den Netzwerkadapter den sie fuer die Internetverbindung einstellen moechten.\n\nFuer weiter bitte Ok druecken."
+msgid ""
+"If you want to connect your %s %s to the Internet, this wizard will guide "
+"you through the basic network setup of your %s %s.\n"
+"\n"
+"Please select the network interface that you want to use for your internet "
+"connection.\n"
+"\n"
+"Please press OK to continue."
+msgstr ""
+"Falls sie Ihren %s %s mit dem Internetverbinden wollen, hilft Ihne dieser "
+"Assistent durch die Basis Einstellunegn Ihres Netzwerkes vom %s %s.\n"
+"\n"
+"Bitte wählen sie den Netzwerkadapter den sie fuer die Internetverbindung "
+"einstellen moechten.\n"
+"\n"
+"Fuer weiter bitte Ok druecken."
 
 #, python-format
 msgid "Please connect your %s %s to the internet"
@@ -10886,7 +10900,9 @@ msgid "Your %s %s does not have an internet connection"
 msgstr "Ihre %s %s hat keine Verbindung zum Internet"
 
 msgid "Specify timeframe to ignore inactivity sleeptimer"
-msgstr "Spezifiziere den Zeitbereich, in dem der Inaktivitaet-Sleeptimer ignoriert werden soll"
+msgstr ""
+"Spezifiziere den Zeitbereich, in dem der Inaktivitaet-Sleeptimer ignoriert "
+"werden soll"
 
 msgid "Start time to ignore inactivity sleeptimer"
 msgstr "Startzeit zum Ignorieren des Inaktivitaet-AusschaltTimers"
@@ -10914,3 +10930,245 @@ msgstr "Ausschalten nach aktuellen Vorgang"
 
 msgid "Standby after current event"
 msgstr "Standby nach aktuellen Vorgang"
+
+msgid "Enable WiFi drivers ?"
+msgstr "Aktiviere WiFi Treiber ?"
+
+msgid "Enable Firmware Update Plugin ?"
+msgstr "Aktiviere Firmware Update Plugin ?"
+
+msgid "Enable 3G / 4G Modems support ?"
+msgstr "Aktiviere 3G / 4G Modems support ?"
+
+msgid "Enable HBBTV ?"
+msgstr "Aktiviere HBBTV ?"
+
+msgid "enable/disable HBBTV; 3g-4g Modem; Firmwareupdate; Wifi Driver"
+msgstr ""
+"Aktiviere / Deaktiviere \n"
+"HBBTV \n"
+"3G / 4G Modems \n"
+"Firmware Update Plugin \n"
+"WiFi Treiber"
+
+msgid "Ready to install packagegroup-base-smbfs ?"
+msgstr "Bereit zum Installieren der Pakete - base-smbfs ?"
+
+msgid ""
+"Your GI LX-x will be restarted after the installation of service \n"
+"Ready to install packagegroup-base-nfs ?"
+msgstr ""
+"Ihr GI LX-x wird nach der Installation des Paketes neu gestartet werden \n"
+"Bereit zum Installieren der Pakete - base-nfs ?"
+
+msgid ""
+"Your GI LX-x will be restarted after the installation of service \n"
+"Ready to install packagegroup-base-appletalk netatalk ?"
+msgstr ""
+"Ihr GI LX-x wird nach der Installation des Paketes neu gestartet werden \n"
+"Bereit zum Installieren der Pakete - base-appletalk netatalk ?"
+
+msgid "Ready to install openvpn ?"
+msgstr "Bereit zum Installieren von openvpn ?"
+
+msgid "Ready to install minidlna ?"
+msgstr "Bereit zum Installieren von minidlna ?"
+
+msgid "Ready to install inadyn-mt ?"
+msgstr "Bereit zum Installieren von inadyn-mt ?"
+
+msgid "Ready to install sabnzbd ?"
+msgstr "Bereit zum Installieren von sabnzbd ?"
+
+msgid "Ready to install ushare ?"
+msgstr "Bereit zum Installieren von ushare ?"
+
+msgid "make your OSD; VIDEO; ALL Screenshots"
+msgstr ""
+"Screenshots erstellen \n"
+"OSD \n"
+"VIDEO \n"
+"ALL"
+
+msgid "Shows available pluigns. Here you can download and install them"
+msgstr "Zeigt Installierbare Plugins an die Sie hier Downloaden koennen"
+
+msgid "Shows Plugins Browser. Here you can setup installed Plugin"
+msgstr "Zeigt den Plugin Browser an um Plugins zu verwalten"
+
+msgid "Shows available plugins. Here you can download and install them"
+msgstr "Zeigt Installierbare Plugins an die Sie hier Downloaden koennen"
+
+msgid "Delete and unstall Plugins. This will remove the Plugin from your box"
+msgstr "Entfernt und Deinstalliert Plugins von der Box"
+
+msgid "Scan for local extensions and install them"
+msgstr "Sucht nach lokalen Erweiterungen und installiert diese"
+
+msgid "Scan for local tar/rar/zip Package and install them"
+msgstr "Sucht nach tar / rar / zip Paketen und installiert diese"
+
+msgid "Setup your Tuner and search for channels"
+msgstr "Tuner Einstellungen und Sendersuche"
+
+msgid "Setup each tuner for your satellite system"
+msgstr "Tuner Einstellungen fuer Ihre Satelliten-Anlage"
+
+msgid "Setup your positioner for your satellite system"
+msgstr "Richten Sie Ihre Drehanlage für Ihre Satelliten-Anlage ein"
+
+msgid "Automatic scan for services"
+msgstr "Automatische Sendersuche"
+
+msgid "Manual scan for services"
+msgstr "Manuelle Sendersuche"
+
+msgid "Search Sats, check signal and lock"
+msgstr "Suche Sats und überpruefe Signal"
+
+msgid "Download satellites.xml"
+msgstr "satellites.xml aus internet laden"
+
+msgid ""
+"Setup your local network. For Wlan you need to boot with a USB-Wlan stick"
+msgstr ""
+"Richten Sie Ihr lokales Netzwerk ein. Für Wlan muss mit einem USB-WLAN-Stick "
+"gebootet werden"
+
+msgid ""
+"Use the Networkwizard to configure your Network. The wizard will help you to "
+"setup your network"
+msgstr ""
+"Verwenden Sie die Netzwerkwizard zum konfigurieren des Netzwerks. Der "
+"Assistent unterstützt Sie bei der Einrichtung Ihres Netzwerks"
+
+msgid "Setup network. Here you can setup DHCP, IP, DNS"
+msgstr "Netzwerkeinstellungen. Hier koennen Sie DHCP, IP, DNS einrichten"
+
+msgid "Setup Network Services (Samba, Ftp, NFS,...)"
+msgstr "Einstellungen fuer (Samba, Ftp, NFS,...)"
+
+msgid "Restart network and remount connections"
+msgstr "Netzwerk neu starten und Netzwerkverbindungen neu einhaengen"
+
+msgid "Setup your mounts for network"
+msgstr "Einstellungen fuer eingehaengte Netzwerkverbindungen"
+
+msgid "Setup your network mounts"
+msgstr "Einstellungen fuer eingehaengte Netzwerkverbindungen"
+
+msgid "Search for network shares"
+msgstr "Suche nach Netzwerkfreigaben"
+
+msgid "Setup your Device mounts (USB, HDD, others...)"
+msgstr "Einstellungen fuer eingebundene Geraete wie (USB, HDD, others...)"
+
+msgid "HDD Fast Umount)"
+msgstr "HDD schnell aushängen"
+
+msgid "Swap File Configuration)"
+msgstr "Swap Datei Einstellungen"
+
+msgid "Setup your Harddisk"
+msgstr "Richten Sie Ihre Festplatte ein"
+
+msgid "Format your Harddisk"
+msgstr "Formatieren Sie Ihre Festplatte"
+
+msgid "Filesystem check your Harddisk"
+msgstr "Dateisystemüberprüfung Ihrer Festplatte"
+
+msgid "Setup your System"
+msgstr "Systemeinstellungen"
+
+msgid "Customise enigma2 personal settings"
+msgstr "persönlichen Einstellungen für ihr Enigma2"
+
+msgid "Setup your OSD"
+msgstr "Einstellungen der Benutzeroberfläche"
+
+msgid "Setup your remote buttons"
+msgstr "Tasteneinstellungen der Fernbedienung"
+
+msgid "Setup your display"
+msgstr "Display Einstellungen"
+
+msgid "Setup your LCD"
+msgstr "LCD Einstellungen"
+
+msgid "Setup your Channel selection configuration"
+msgstr "Senderlisten Einstellungen"
+
+msgid "Setup your recording config"
+msgstr "Aufnahme Einstellungen"
+
+msgid "Setup your EPG config"
+msgstr "EPG Einstellungen"
+
+msgid "Setup your Video Mode, Video Output and other Video Settings"
+msgstr ""
+"Einstellungen für Video-Modus, Video-Ausgang und andere Video-Einstellungen"
+
+msgid "Select your Language for Audio/Subtitles"
+msgstr "wählen sie die Sprache für Audio und Subtitel aus"
+
+msgid "Start/stop/select your cam, You need to install first a softcam"
+msgstr ""
+"Auswählen / Starten und stoppen der cam. Sie müssen erst eine Softcam "
+"installieren"
+
+msgid ""
+"Use the Softcam Panel to control your Cam. This let you start/stop/select a "
+"cam"
+msgstr ""
+"Benutze das Softcam Panel zum steuern der cam. Hier kannst Du die cam "
+"Auswählen / Starten und stoppen."
+
+msgid "Edit your Emu-Configs"
+msgstr "Emu-Konfigurations Dateien editieren"
+
+msgid "Update/Backup your firmware, Backup/Restore settings"
+msgstr "Update / Backup Ihrer Firmware, Backup / Restore-Einstellungen"
+
+msgid ""
+"Check/Install online updates (you must have a working internet connection)"
+msgstr ""
+"Prüfen / Installieren Online-Updates (Sie müssen eine funktionierende "
+"Internet-Verbindung haben)"
+
+msgid ""
+"Backup your current image to HDD or USB. This will make a 1:1 copy of your "
+"box"
+msgstr ""
+"Sichern Sie Ihr aktuelles image auf Festplatte oder USB. Dies wird eine 1:1-"
+"Kopie der Box machen"
+
+msgid ""
+"Backup your current settings. This includes E2-setup, channels, network and "
+"all selected files"
+msgstr ""
+"Sichern Sie Ihre aktuellen Einstellungen. Dies beinhaltet E2-setup, Kanäle, "
+"Netzwerk und alle ausgewählten Dateien"
+
+msgid ""
+"Restore your settings back from a backup. After restore the box will restart "
+"to activated the new settings"
+msgstr ""
+"Stellen Sie Ihre Einstellungen aus einer Sicherung zurück. Nach der "
+"Wiederherstellung wir die Box neu gestartet um die neuen Einstellungen zu "
+"übernehmen"
+
+msgid ""
+"Here you can select which files should be added to backupfile. (default: E2-"
+"setup, channels, network"
+msgstr ""
+"Auswahl der Dateien die zum Backupfile hinzugefügt werden sollen. (Standard: "
+"E2-setup, Kanäle, Network)"
+
+msgid "Here you can select which files should be updated with a online update"
+msgstr ""
+"Hier können Sie auswählen, welche Dateien mit einem Online-Update "
+"aktualisiert werden sollten"
+
+msgid "Flash on the fly your Receiver software."
+msgstr "Image flashen über HDD ohne stick zu benutzen"
