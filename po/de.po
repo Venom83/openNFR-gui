@@ -656,10 +656,10 @@ msgstr "Über..."
 msgid "Accesspoint:"
 msgstr "Zugangspunkt:"
 
-msgid "Action on long power button press"
+msgid "Action on long powerbutton press"
 msgstr "Aktion bei langem Tastendruck auf Ein/Aus"
 
-msgid "Action on short power button press"
+msgid "Action on short powerbutton press"
 msgstr "Aktion bei kurzem Tastendruck auf Ein/Aus"
 
 msgid "Activate"
