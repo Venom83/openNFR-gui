@@ -185,14 +185,14 @@ def Plugins(**kwargs):
 	return [
 
 	#// show Infopanel in Main Menu
-	PluginDescriptor(name="Info Panel", description="Info panel GUI 15/02/2014", where = PluginDescriptor.WHERE_MENU, fnc = Apanel),
+	PluginDescriptor(name="Info Panel", description="Info panel GUI 22/05/2014", where = PluginDescriptor.WHERE_MENU, fnc = Apanel),
 	#// autostart
 	PluginDescriptor(where=PluginDescriptor.WHERE_AUTOSTART,	needsRestart=True, fnc=startcam),
 	#PluginDescriptor(where = [PluginDescriptor.WHERE_SESSIONSTART,PluginDescriptor.WHERE_AUTOSTART],fnc = camstart),
 	#// SwapAutostart
 	#PluginDescriptor(where = [PluginDescriptor.WHERE_SESSIONSTART,PluginDescriptor.WHERE_AUTOSTART],fnc = SwapAutostart),
 	#// show Infopanel in EXTENSIONS Menu
-	PluginDescriptor(name="Info Panel", description="Info panel GUI 12/11/2012", where = PluginDescriptor.WHERE_EXTENSIONSMENU, fnc = main) ]
+	PluginDescriptor(name="Info Panel", description="Info panel GUI 22/05/2014", where = PluginDescriptor.WHERE_EXTENSIONSMENU, fnc = main) ]
 
 
 
@@ -247,13 +247,10 @@ from Screens.InfoBarGenerics import InfoBarPiP
 #g
 
 def InfoEntryComponent(file):
-	png = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "pics/" + file + ".png"));
+	png = LoadPixmap("/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/pics/" + file + ".png")
 	if png == None:
-		png = LoadPixmap("/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/pics/" + file + ".png")
-		if png == None:
-			png = LoadPixmap(cached = True, path = resolveFilename(SCOPE_CURRENT_SKIN, "pics/default.png"));
-			if png == None:
-				png = LoadPixmap("/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/pics/default.png")
+		png = LoadPixmap("/usr/lib/enigma2/python/Plugins/Extensions/Infopanel/pics/default.png")
+
 	res = (png)
 	return res
 
