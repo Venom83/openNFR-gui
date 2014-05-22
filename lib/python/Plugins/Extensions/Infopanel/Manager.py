@@ -271,7 +271,8 @@ class NFRCamManager(Screen):
 
 	def closestop(self):
 		self.activityTimer.stop()
-		self.mbox.close()
+		if self.mbox:
+			self.mbox.close()
 		self.createinfo()
 
 	def restart(self):
