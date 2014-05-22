@@ -9951,6 +9951,9 @@ msgstr "Diskussion/Interview/Debatte"
 msgid "do nothing"
 msgstr "nichts machen"
 
+msgid "Do nothing"
+msgstr "nichts machen"
+
 msgid "documentary"
 msgstr "Dokumentation"
 
