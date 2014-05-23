@@ -64,7 +64,7 @@ from Screens.CronTimer import *
 from Plugins.Extensions.Infopanel.ScriptRunner import *
 from Screens.HddSetup import HddSetup
 from Screens.HddMount import HddFastRemove
-from Screens.Swap import Swap
+from Screens.Swap import SwapOverviewScreen
 from Plugins.Extensions.Infopanel.Manager import *
 from Plugins.Extensions.Infopanel.Softcam import *
 from Plugins.Extensions.Infopanel.QuickMenu import QuickMenu
@@ -454,7 +454,7 @@ class Infopanel(Screen, InfoBarPiP):
 		elif menu == "MountManager":
 			self.session.open(HddSetup)
 		elif menu == "SwapManager":
-			self.session.open(Swap)
+			self.session.open(SwapOverviewScreen)
 		elif menu == "Red-Key-Action":
 			self.session.open(RedPanel)
 		elif menu == "KeymapSel":

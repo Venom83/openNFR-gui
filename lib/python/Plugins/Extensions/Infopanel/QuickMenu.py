@@ -33,7 +33,7 @@ from Plugins.SystemPlugins.NetworkWizard.NetworkWizard import NetworkWizard
 from Plugins.Extensions.Infopanel.RestartNetwork import RestartNetwork
 from Screens.HddSetup import HddSetup
 from Screens.HddMount import HddFastRemove
-from Screens.Swap import Swap
+from Screens.Swap import SwapOverviewScreen
 from Screens.OpenNFR_wizard import OpenNFRWizardSetup
 from Plugins.Extensions.Infopanel.Manager import *
 from Plugins.SystemPlugins.SoftwareManager.ImageBackup import ImageBackup
@@ -562,7 +562,7 @@ class QuickMenu(Screen):
 		elif item[0] == _("HDD Fast Umount"):
 			self.session.open(HddFastRemove)			
 		elif item[0] == _("SWAP Manager"):
-			self.session.open(Swap)	
+			self.session.open(SwapOverviewScreen)	
 ######## Select Softcam Menu ##############################
 		elif item[0] == _("Softcam Panel"):
        			self.session.open(NFRCamManager)
