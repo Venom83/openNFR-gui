@@ -21,7 +21,7 @@ def onMountpointAdded(mountpoint):
 	global searchPaths
 	try:
 		if getBoxType() == 'vuultimo' or getMachineProcModel().startswith("ini-90"):
-			path = os.path.join(mountpoint, 'piconlcd') + '/'
+			path = os.path.join(mountpoint, 'usr/share/enigma2/piconlcd') + '/'
 		else:
 			path = os.path.join(mountpoint, 'picon') + '/'
 		if os.path.isdir(path) and path not in searchPaths:
@@ -36,7 +36,7 @@ def onMountpointAdded(mountpoint):
 def onMountpointRemoved(mountpoint):
 	global searchPaths
 	if getBoxType() == 'vuultimo' or getMachineProcModel().startswith("ini-90"):
-		path = os.path.join(mountpoint, 'piconlcd') + '/'
+		path = os.path.join(mountpoint, 'usr/share/enigma2/piconlcd') + '/'
 	else:
 		path = os.path.join(mountpoint, 'picon') + '/'
 	try:
