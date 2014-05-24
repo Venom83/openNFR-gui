@@ -10,6 +10,7 @@ from Components.Pixmap import Pixmap
 from Components.config import config, ConfigBoolean, configfile
 
 from LanguageSelection import LanguageWizard
+from Plugins.Extensions.OpenWebif.plugin import OpenWebifConfig
 
 config.misc.firstrun = ConfigBoolean(default = True)
 config.misc.languageselected = ConfigBoolean(default = True)
@@ -38,3 +39,4 @@ class StartWizard(WizardLanguage, Rc):
 wizardManager.registerWizard(VideoWizard, config.misc.videowizardenabled.getValue(), priority = 0)
 wizardManager.registerWizard(LanguageWizard, config.misc.languageselected.getValue(), priority = 1)
 wizardManager.registerWizard(StartWizard, config.misc.firstrun.getValue(), priority = 20)
+wizardManager.registerWizard(OpenWebifConfig, config.misc.firstrun.getValue(), priority = 30)
