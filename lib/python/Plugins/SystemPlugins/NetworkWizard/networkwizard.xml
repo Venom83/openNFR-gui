@@ -50,7 +50,6 @@ self.condition = (self.InterfaceState == True )
                 <displaytext value="Please follow the instructions on the TV" />
                 <code>
 self.clearSelectedKeys()
-self["text"].setText(self.Text)
 self.selectKey("OK")
                 </code>
                 <code pos="after">
