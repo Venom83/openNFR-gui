@@ -47,7 +47,6 @@ def filescan(**kwargs):
 		)
 
 def Plugins(**kwargs):
-	return \
-		[PluginDescriptor(name =_("PicturePlayer"), description =_("fileformats (BMP, PNG, JPG, GIF)"), where = PluginDescriptor.WHERE_PLUGINMENU, needsRestart = False, fnc = menu),
-		 PluginDescriptor(name =_("PicturePlayer"), description =_("fileformats (BMP, PNG, JPG, GIF)"), where = PluginDescriptor.WHERE_EXTENSIONSMENU, needsRestart = False, fnc = menu),
+	return	[
+	     PluginDescriptor(name = _("PicturePlayer"), description = _("Play back media files"), where = PluginDescriptor.WHERE_PLUGINMENU, needsRestart = False, fnc = main),
 		 PluginDescriptor(name=_("PicturePlayer"), where = PluginDescriptor.WHERE_FILESCAN, needsRestart = False, fnc = filescan)]
