@@ -610,7 +610,7 @@ msgstr ""
 "Jetzt ausschalten?"
 
 msgid "A small overview of the available icon states and actions."
-msgstr "Eine kurze Übersicht der verfügbaren Iconzustatus und Aktionen."
+msgstr "Eine kurze Übersicht der verfügbaren Iconstatus und Aktionen."
 
 msgid ""
 "A timer failed to record!\n"
