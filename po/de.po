@@ -512,7 +512,7 @@ msgid ""
 "A finished powertimer wants to set your\n"
 "%s %s to standby. Do that now?"
 msgstr ""
-"Ein Powertimer will die %s %s in Bereitschaft schalten.\n"
+"Ein Powertimer will die %s %s in den Standby schalten.\n"
 "Jetzt ausführen?"
 
 #, python-format
@@ -528,7 +528,7 @@ msgid ""
 "A finished record timer wants to set your\n"
 "%s %s to standby. Do that now?"
 msgstr ""
-"Ein Aufnahmetimer will die %s %s in Bereitschaft schalten.\n"
+"Ein Aufnahmetimer will die %s %s in den Standby schalten.\n"
 "Jetzt ausführen?"
 
 #, python-format
@@ -599,7 +599,7 @@ msgid ""
 "%s %s to standby. Do that now?"
 msgstr ""
 "Ein Ausschalttimer möchte die %s %s\n"
-"in Bereitschaft schalten. Jetzt in Bereitschaft gehen?"
+"in den Standby schalten. Jetzt in den Standby gehen?"
 
 #, python-format
 msgid ""
@@ -610,14 +610,14 @@ msgstr ""
 "Jetzt ausschalten?"
 
 msgid "A small overview of the available icon states and actions."
-msgstr "Eine kurze Übersicht der verfügbaren Iconzustände und Aktionen."
+msgstr "Eine kurze Übersicht der verfügbaren Iconzustatus und Aktionen."
 
 msgid ""
 "A timer failed to record!\n"
 "Disable TV and try again?\n"
 msgstr ""
 "Timeraufnahme fehlgeschlagen.\n"
-"Programm beenden und erneut versuchen?\n"
+"Programm beenden und erneut versuchen.\n"
 
 msgid "A/V settings"
 msgstr "A/V Einstellungen"
@@ -819,7 +819,7 @@ msgid "Album"
 msgstr "Album"
 
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 msgid "All"
 msgstr "Alle"
@@ -929,7 +929,7 @@ msgid "Always show bouquets"
 msgstr "Zeige Favoritenliste immer an"
 
 msgid "An empty filename is illegal."
-msgstr "Leere Dateinamen nicht erlaubt."
+msgstr "Leere Dateinamen sind nicht erlaubt."
 
 msgid "An error occurred while downloading the packetlist. Please try again."
 msgstr ""
@@ -1082,7 +1082,7 @@ msgid "Auto Deep Standby"
 msgstr "automatisch Ausschalten"
 
 msgid "Auto Standby"
-msgstr "automatisch Bereitschaft"
+msgstr "automatischer Standby"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatische Kapitelwechsel alle ? Minuten (0=nie)"
@@ -1259,18 +1259,18 @@ msgid "Brightness (Normal)"
 msgstr "Helligkeit (Normal)"
 
 msgid "Brightness (Standby)"
-msgstr "Helligkeit (Bereitschaft)"
+msgstr "Helligkeit (Standby)"
 
 msgid "Buffers:"
 msgstr "Puffer:"
 
 #, python-format
 msgid "Build:\t%s"
-msgstr ""
+msgstr "Build:\t%s"
 
 #, python-format
 msgid "Build: %s"
-msgstr ""
+msgstr "Build: %s"
 
 msgid "Bulgarian"
 msgstr "Bulgarisch"
@@ -1408,7 +1408,7 @@ msgstr "Kalibrieren"
 
 msgid "Can be used for different fps between external subtitles and video."
 msgstr ""
-"Kann für unterschiedliche Frequenzen von Video und Untertitel benutzt werden."
+"Kann für unterschiedliche Bildwiederholungsraten von Video und Untertitel benutzt werden."
 
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -1648,10 +1648,10 @@ msgid "Chose between record and ZAP."
 msgstr "Wähle zwischen Aufnahme und Umschalten."
 
 msgid "Circular left"
-msgstr "Linkszirkular"
+msgstr "Linksdrehend"
 
 msgid "Circular right"
-msgstr "Rechtszirkular"
+msgstr "Rechtsdrehend"
 
 msgid "Clean network trash cans"
 msgstr "Mülleimer im Netzwerk aufräumen"
@@ -2170,7 +2170,7 @@ msgid "Convert ext3 filesystem to ext4"
 msgstr "Dateisystem ext3 in ext4 umwandeln"
 
 msgid "Convert ext3 to ext4"
-msgstr "Dateisystem ext3 in ext4 umwandeln"
+msgstr "ext3 in ext4 umwandeln"
 
 msgid "Convert filesystem ext3 to ext4"
 msgstr "Dateisystem ext3 in ext4 umwandeln"
@@ -2447,7 +2447,7 @@ msgid "Delete..."
 msgstr "löschen..."
 
 msgid "Deleted"
-msgstr "Gelöscht"
+msgstr "gelöscht"
 
 #, python-format
 msgid "Deleted %s!"
@@ -3252,7 +3252,7 @@ msgid "Frame size in full view"
 msgstr "Framegröße im Vollbild"
 
 msgid "Free Memory:"
-msgstr "Speicher frei:"
+msgstr "Freier Speicher:"
 
 msgid "Free Swap:"
 msgstr "Swap frei:"
@@ -3444,7 +3444,7 @@ msgid "HDMI CEC Setup"
 msgstr "HDMI CEC Einstellungen"
 
 msgid "Handle standby from TV"
-msgstr "Fernseher in Bereitschaft versetzen"
+msgstr "Fernseher in den Standby versetzen"
 
 msgid "Handle wakeup from TV"
 msgstr "Fernseher aufwachen"
@@ -3561,7 +3561,7 @@ msgid "IP:"
 msgstr "IP:"
 
 msgid "ISO file is too large for this filesystem!"
-msgstr "Die ISO-Datei passt nicht auf das Dateisystem!"
+msgstr "Die ISO-Datei ist zu groß für das Dateisystem!"
 
 msgid "ISO path"
 msgstr "ISO-Ausgabepfad"
@@ -3856,7 +3856,7 @@ msgid "Instant recordings location"
 msgstr "Pfad für Sofortaufnahmen"
 
 msgid "Interface"
-msgstr ""
+msgstr "Interface"
 
 msgid "Interface: "
 msgstr "Interface: "
@@ -3881,7 +3881,7 @@ msgid "Invalid directory selected: %s"
 msgstr "Ungültiges Verzeichnis ausgewählt: %s"
 
 msgid "Invalid location"
-msgstr "Fehlerhafter Ort"
+msgstr "ungültiger Ort"
 
 msgid "Invalid transponder data"
 msgstr "ungültige Transponderdaten"
@@ -3983,10 +3983,10 @@ msgid "LED Deep Standby"
 msgstr "LED wenn Aus"
 
 msgid "LED Normal"
-msgstr "LED normal"
+msgstr "LED im Betrieb"
 
 msgid "LED Standby"
-msgstr "LED Bereitschaft"
+msgstr "LED im Standby"
 
 msgid "LED brightness during deep standby."
 msgstr "LED Helligkeit wenn ausgeschaltet."
@@ -3995,7 +3995,7 @@ msgid "LED brightness during normal operations."
 msgstr "LED Helligkeit im Betrieb."
 
 msgid "LED brightness during standby."
-msgstr "LED Helligkeit in Bereitschaft."
+msgstr "LED Helligkeit wenn im Standby."
 
 msgid "LNB"
 msgstr "LNB"
@@ -4191,7 +4191,7 @@ msgid "Longitude"
 msgstr "Längengrad"
 
 msgid "Luxembourgish"
-msgstr ""
+msgstr "Luxemburgisch"
 
 msgid "MAC-address"
 msgstr "MAC-Adresse"
@@ -4690,7 +4690,7 @@ msgid "No services/providers selected"
 msgstr "Keine Sender/Anbieter ausgewählt"
 
 msgid "No standby"
-msgstr "Keine Bereitschaft"
+msgstr "Kein Standby"
 
 msgid "No suitable sat tuner found!"
 msgstr "Kein verwendbarer Sat Tuner gefunden!"
@@ -5686,7 +5686,7 @@ msgid "Really exit the subservices quickzap?"
 msgstr "Den Unterkanal-Schnellumschalter wirklich beenden?"
 
 msgid "Really reboot now?"
-msgstr "Trotzdem neu booten?"
+msgstr "Trotzdem neu starten?"
 
 #, python-format
 msgid "Really reflash your %s %s and reboot now?"
@@ -5917,7 +5917,7 @@ msgstr ""
 "Erweiterte A/V Einstellungen auf Ihre letzte Konfiguration zurücksetzen?"
 
 msgid "Reshare:"
-msgstr ""
+msgstr "Reshare:"
 
 msgid "Resolution"
 msgstr "Auflösung"
@@ -6029,7 +6029,7 @@ msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
 
 msgid "SPDIF"
-msgstr ""
+msgstr "SPDIF"
 
 msgid "SSID:"
 msgstr "SSID:"
@@ -6399,10 +6399,10 @@ msgid "Serial No"
 msgstr "Seriennummer"
 
 msgid "Serv.Name"
-msgstr ""
+msgstr "Serv.Name"
 
 msgid "Server:"
-msgstr ""
+msgstr "Server:"
 
 msgid "Servers"
 msgstr "Server"
@@ -7157,16 +7157,16 @@ msgid "Standard"
 msgstr ""
 
 msgid "Standby"
-msgstr "Bereitschaft"
+msgstr "Standby"
 
 msgid "Standby / Restart"
-msgstr "Bereitschaft / Neustart"
+msgstr "Standby / Neustart"
 
 msgid "Standby / restart"
-msgstr "Bereitschaft / Neustart"
+msgstr "Standby / Neustart"
 
 msgid "Start"
-msgstr ""
+msgstr "Start"
 
 msgid "Start from the beginning"
 msgstr "Am Anfang starten"
@@ -7190,7 +7190,7 @@ msgid "Starting on"
 msgstr "Beginnend ab"
 
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 msgid "Step east"
 msgstr "Schritt nach Osten"
@@ -7412,7 +7412,7 @@ msgid "System temperature: %s"
 msgstr "Systemtemperatur: %s"
 
 msgid "System: "
-msgstr ""
+msgstr "System: "
 
 msgid "TB"
 msgstr "TB"
@@ -7428,7 +7428,7 @@ msgid "TSID"
 msgstr "TSID"
 
 msgid "TUNING"
-msgstr ""
+msgstr "TUNING"
 
 msgid "TV button mode"
 msgstr "TV Taste bewirkt"
@@ -7449,7 +7449,7 @@ msgid "Teletext subtitle color"
 msgstr "Farbe Videotextuntertitel"
 
 msgid "Telnet Interface"
-msgstr ""
+msgstr "Telnet Interface"
 
 msgid "Telnet Port"
 msgstr "Telnet Port"
@@ -7480,13 +7480,13 @@ msgid "Test type"
 msgstr "Testtyp"
 
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 msgid "Text color"
 msgstr "Textfarbe"
 
 msgid "Thai"
-msgstr ""
+msgstr "Thai"
 
 msgid ""
 "Thank you for using the wizard.\n"
